@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "whislists",
+  "info": {
+    "singularName": "whislist",
+    "pluralName": "whislists",
+    "displayName": "Whislist"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "game": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::game.game"
+    }
+  }
+}
